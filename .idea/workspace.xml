@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35075f98-0857-4988-850c-32899076aa34" name="Default Changelist" comment="" />
+    <list default="true" id="35075f98-0857-4988-850c-32899076aa34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/amazigh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laFourmi.html" beforeDir="false" afterPath="$PROJECT_DIR$/laFourmi.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iVr1CWByfFYe0sHyElCvm6MfLO" />
   <component name="ProjectViewState">
@@ -34,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602003383129</updated>
-      <workItem from="1602003384193" duration="3525000" />
+      <workItem from="1602003384193" duration="6142000" />
+      <workItem from="1602060210730" duration="1380000" />
     </task>
     <servers />
   </component>
@@ -66,9 +74,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2549" y="318" key="EditFileWatcherDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602007870569" />
-    <state x="2381" y="185" key="SettingsEditor" timestamp="1602007860596">
+    <state x="2381" y="185" key="SettingsEditor" timestamp="1602010919923">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="2381" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/3840.0.1920.1040@1920.0.1920.1080" timestamp="1602010919923" />
     <state x="2381" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602007860596" />
   </component>
 </project>

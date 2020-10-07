@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'galette';
+    src: url('fonts/galette.eot');
+    src: url('fonts/galette.eot') format('embedded-opentype'),
+         url('fonts/galette.woff2') format('woff2'),
+         url('fonts/galette.woff') format('woff'),
+         url('fonts/galette.ttf') format('truetype'),
+         url('fonts/galette.svg#galette') format('svg');
+}

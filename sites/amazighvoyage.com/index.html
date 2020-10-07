@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>amazigh voyages.com</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    <!--     CSS           -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <!--     javascript           -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/descriptionBoxLoad.js"></script>
+    
+    
+
+     <script>
+         
+         /*      ecran de chargement           */
+         
+            function onReady(callback) {
+                var intervalID = window.setInterval(checkReady, 1000);
+
+                function checkReady() {
+                    if (document.getElementsByTagName('body')[0] !== undefined) {
+                        window.clearInterval(intervalID);
+                        callback.call(this);
+                    }
+                }
+            }
+
+            function show(id, value) {
+                document.getElementById(id).style.display = value ? 'block' : 'none';
+            }
+
+            onReady(function () {
+                show('page', true);
+                show('loading', false);
+            });
+         
+         /*      smoothScroll           */
+         
+         $(document).ready(function() {
+
+            $('.scrollTo').click( function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top}, speed ); // Go
+                return false;
+            });
+              });
+    </script>
+
+</head>
+
+<body>
+	
+    <!--                ecran de chargement                   -->
+    <div id="loading">
+
+        <p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+            <defs>
+                <mask id="mask1">
+                    <rect y="0px" x="0px" height="400" width="400" fill="white">
+                        <animate id="grand" begin="0s;petit.end" attributeName="fill" from="black" to="white" dur="2s"></animate>
+                        <animate id="petit" begin="grand.end" attributeName="fill" from="white" to="black" dur="2s"></animate>
+                    </rect>
+                </mask>
+            </defs>
+
+    <!-- image -->
+            <image width="300" height="150" xlink:href="images/logoAV.svg" mask="url(#mask1)">
+                
+            </image>
+
+            
+        </svg>Chargement...</p>
+    </div>
+
+    <!--               fin ecran de chargement                   -->
+    
+    
+    
+	<div class="main" id="page">
+    <div class="fullWidth" id="accueil">
+        <div class="fullWidth" id="header">
+            <div class="inner">
+            <a id="logoHeader" href="#header"></a>
+                <nav class="mainMenu mainMenuAccueil">
+                    <ul>
+                        <li><a class="scrollTo" href="#header">accueil</a></li>
+                        <li><a class="scrollTo" href="#apropos">à propos</a></li>
+                        <li><a class="scrollTo" href="#nosCircuits">nos circuits</a></li>
+                        <li><a class="scrollTo" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="inner">
+        	<h2>accueil</h2>
+            <img id="slogan" src="images/slogan.png" alt="Vivez mille et une aventures...">
+            <a class="scrollTo flecheBas" href="#apropos"></a>
+        </div>
+    </div>
+        
+    <div class="fullWidth" id="apropos">
+    	<div class="inner">
+            <nav class="mainMenu mainMenuAutre" id="mainMenuApropos">
+                    <ul>
+                        <li><a class="scrollTo" href="#header">accueil</a></li>
+                        <li><a class="scrollTo" href="#apropos">à propos</a></li>
+                        <li><a class="scrollTo" href="#nosCircuits">nos circuits</a></li>
+                        <li><a class="scrollTo" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+        	<h2>à propos</h2>
+            <a class="scrollTo flecheHaut" href="#header"></a>
+            <div class="box">
+            	<p>La société Amazigh Voyages vous propose de compléter vos vacances au Maroc par un brin d’exploration. A travers des circuits étudiés pour la beauté de leurs paysages, venez découvrir le Maroc en notre compagnie.</p>
+<p>Voyagez à travers les ergs de dunes dans la région de Zagora, marchez à la conquête du plus haut sommet d’Afrique du nord, découvrez les trésors culturels cachés de la ville d’Essaouira.</p>
+<p>Que vous désiriez connaitre le Maroc à votre rythme, à travers nos treks dans la région du Haut-Atlas ou que vous soyez impatient de voir les régions les plus isolées grâce à nos raids en 4x4, Amazigh Voyages vous emmènera au bout de vos rêves.</p>
+            </div>
+            <a class="scrollTo flecheBas" href="#nosCircuits"></a>
+
+        </div>
+    </div>
+    <div class="fullWidth" id="nosCircuits">
+    	<div class="inner">
+            <nav class="mainMenu mainMenuAutre" id="mainMenuNosCircuits">
+                    <ul>
+                        <li><a class="scrollTo" href="#header">accueil</a></li>
+                        <li><a class="scrollTo" href="#apropos">à propos</a></li>
+                        <li><a class="scrollTo" href="#nosCircuits">nos circuits</a></li>
+                        <li><a class="scrollTo" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+        	<a class="scrollTo flecheHaut" href="#apropos"></a>
+        	<h2>nos circuits</h2>
+            
+            <div class="descriptionBox">
+            	<div class="imageRaid">
+                    
+                    <div id="img1"></div>
+                    <div id="img2"></div>
+                    <div id="img3"></div>
+                    <h1>Nom Raid</h1>
+                </div>
+                <div class="raidTrekk">
+                    <div class="navRaid">
+                        <ul id="topNavRaid">
+                            <li><a href="#nosCircuits" class="active" id="btnRaid">Raid</a></li>
+                            <li><a href="#nosCircuits" id="btnTrekk">Trekk</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                        
+                        <ul id="bottomNavRaid">
+                        	<li><a href="#nosCircuits" id="btnTodra" class="active">Gorges du Todra</a></li>
+                            <li><a href="#nosCircuits" id="btnPdd">Portes du Désert</a></li>
+                            <li><a href="#nosCircuits" id="btnPp">Petit prince</a></li>
+                            <li><a href="#nosCircuits" id="btnTas">Thé au Sahara</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                        
+                        <ul id="bottomNavTrekk">
+                        	<li><a href="#nosCircuits" id="btnAtlas" class="active">L’Atlas</a></li>
+                            <li><a href="#nosCircuits" id="btnOukai">Oukaïmeden</a></li>
+                            <li><a href="#nosCircuits" id="btnAa">L'Anti Atlas</a></li>
+                            <li><a href="#nosCircuits" id="btnDec">Découverte</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                   </div>
+                   
+                   <div class="infoRaid">
+                    </div>
+				</div>
+            </div>
+            <a class="scrollTo flecheBas" href="#contact"></a>
+        </div>
+    </div>
+    <div class="fullWidth" id="contact">
+    	<div class="inner">
+            <nav class="mainMenu mainMenuAutre" id="mainMenuContact">
+                    <ul>
+                        <li><a class="scrollTo" href="#header">accueil</a></li>
+                        <li><a class="scrollTo" href="#apropos">à propos</a></li>
+                        <li><a class="scrollTo" href="#nosCircuits">nos circuits</a></li>
+                        <li><a class="scrollTo" href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+        	<h2>contact</h2>
+            <a class="scrollTo flecheHaut" href="#nosCircuits"></a>
+            <div class="box">
+                <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" />
+                </div>
+                <div>
+                    <label for="courriel">Mail</label>
+                    <input type="email" id="courriel" />
+                </div>
+                <div>
+                    <label for="subject">Objet</label>
+                    <input type="email" id="subject" />
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                
+                <div class="button">
+                    <button type="submit">Envoyer votre message</button>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
+        </div>
+    </div>
+    <div id="footer">
+    	<div class="inner">
+            <ul class="social">
+                <li id="facebook"><a href="#facebook"></a></li>
+                <li id="youtube"><a href="#youtube"></a></li>
+            </ul>
+            
+            <p><span>amazigh Voyages</span><br>
+            15 Rue Loubnane<br>
+                Marrakesh, Maroc<br>
+            <span>05 15 21 84 65</span></p>
+            
+            
+        </div>
+    </div>
+        </div>
+</body>
+</html>
