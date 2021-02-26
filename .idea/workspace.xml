@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35075f98-0857-4988-850c-32899076aa34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/amazigh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laFourmi.html" beforeDir="false" afterPath="$PROJECT_DIR$/laFourmi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,21 +63,44 @@
       <updated>1602003383129</updated>
       <workItem from="1602003384193" duration="6142000" />
       <workItem from="1602060210730" duration="1380000" />
+      <workItem from="1614354727810" duration="187000" />
+      <workItem from="1614361800471" duration="1828000" />
     </task>
+    <task id="LOCAL-00001" summary="design - changer le design et déplacer des fichiers">
+      <created>1614354785537</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614354785537</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fichiers - ajout de fichier oublié lors du precedent commit">
+      <created>1614374391215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614374391215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2549" y="318" key="EditFileWatcherDialog" timestamp="1602007870569">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2549" y="318" key="EditFileWatcherDialog/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602007870569" />
-    <state x="2381" y="185" key="SettingsEditor" timestamp="1602010919923">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2381" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080/3840.0.1920.1040@1920.0.1920.1080" timestamp="1602010919923" />
-    <state x="2381" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1602007860596" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="design - changer le design et déplacer des fichiers" />
+    <MESSAGE value="fichiers - ajout de fichier oublié lors du precedent commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fichiers - ajout de fichier oublié lors du precedent commit" />
   </component>
 </project>
