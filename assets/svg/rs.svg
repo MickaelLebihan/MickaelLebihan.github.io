@@ -1,0 +1,22 @@
+<!--<svg viewBox="0 0 1715 994" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">-->
+<!--  <g id="rGroup" fill="#ebebeb">-->
+<!--    <g id="r2" class="r">-->
+<!--      <path class="rh" d="M0 165.623h1714.19v165.623H0z"/>-->
+<!--      <path class="rs" d="M0 165.623h1714.19v165.623H0z"/>-->
+<!--    </g>-->
+<!--    <g id="r1" class="r">-->
+<!--      <path class="rh" d="M0 0h1714.19v165.623H0z"/>-->
+<!--      <path class="rs" d="M0 0h1714.19v165.623H0z"/>-->
+<!--    </g>-->
+<!--  </g>-->
+<!--</svg>-->
+
+<svg viewBox="0 0 1000 1000" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+  <g id="rGroup" fill="none">
+    <path id="r5" class="r" d="M0 1468.23h1714.19v367.057H0z"/>
+    <path id="r4" class="r" d="M0 1101.17h1714.19v367.057H0z"/>
+    <path id="r3" class="r" d="M0 734.113h1714.19v367.057H0z"/>
+    <path id="r2" class="r" d="M0 367.057h1714.19v367.057H0z"/>
+    <path id="r1" class="r" d="M0 0h1714.19v367.057H0z"/>
+  </g>
+</svg>
