@@ -1,4 +1,205 @@
-h1{
-  color: white;
-  background-color: black;
+@import "vars";
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+
+}
+
+.outer{
+  width: 100%;
+  .inner{
+    max-width: 1280px;
+    margin: 0 auto;
+    //overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+header{
+  background-color: rgb(243,237,221);
+  .inner{
+    height: 150px;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
+
+
+    h2{
+      //border: 1px solid #000;
+      z-index: 2;
+      position: relative;
+
+      display: block;
+
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5em;
+      text-align: right;
+
+
+      border: 4px solid $mainColor;
+      border-width: 4px 4px 0 4px;
+      #name{
+        padding: 5px;
+        color: $mainColor;
+
+        text-transform: lowercase;
+        #firstname{
+          font-weight: normal;
+        }
+        #lastname{
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+      #post{
+        display: block;
+        background-color: $mainColor;
+        color: white;
+        padding: 5px;
+        font-weight: bold;
+
+
+        text-transform: uppercase;
+      }
+      #andMore{
+        padding: 3px;
+        font-size: 0.5em;
+        text-transform: lowercase;
+        position: absolute;
+        transform: rotate3d(1,1,1,-5deg);
+        right: 10px;
+        bottom: -17px;
+        background-color: #fff;
+
+        transition: background-color 0.5s ease;
+      }
+    }
+  }
+}
+
+main{
+  .inner{
+    background-color: lightgray;
+  }
+}
+.block{
+  margin-bottom: 20px;
+  h2{
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: $mainColor;
+    border-radius: 0 5px 0 0;
+    font-weight: bold;
+
+    i{
+      margin-left: 20px;
+      //border: 1px solid #000;
+    }
+  }
+  .subContent{
+    padding: 20px;
+    background-color: rgba(white, 0.2);
+    border-left: 4px solid $mainColor;
+    div{
+      margin-bottom: 10px;
+      h3{
+        padding: 0 8px;
+        display: inline-block;
+        font-weight: bold;
+        border-style: solid;
+        border-color: $mainDark;
+        border-width: 0 0 2px 7px;
+        &:first-letter{
+          text-transform: uppercase;
+        }
+      }
+      p{
+        margin: 5px 0 0 25px;
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+.block:hover{
+  .subContent{
+    background-color: rgba(white, 0.6);
+  }
+
+  &#formation{
+    h2>i{
+      transition: transform 2s ease;
+      transform-origin: 50%;
+      transform: rotate(-45deg);
+    }
+  }
+  &#xp{
+    h2>i{
+      transition: transform 2s ease;
+
+      transform: rotate(360deg);
+    }
+  }
+}
+
+
+ul{
+  li{
+    list-style-type: disc;
+    margin-left: 20px;
+    ul{
+      li{
+        list-style-type: circle;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+svg{
+  //display: none;
+  z-index: 1;
+  position: absolute;
+  //overflow: visible;
+  right: 350px;
+  //top: 1500px;
+  //width: 100%;
+  background-color: gray;
+  transform: rotate(-45deg) scale(0.5);
+
+  #rGroup{
+    //display: none;
+    .r{
+      transform: scale3d(1,1,1);
+      transform-origin: 0 0;
+      transition: transform 0.5s ease;
+      &:hover{
+        transform: scale3d(2,1,1);
+      }
+    }
+
+    #r1{
+      fill: $mainDark;
+    }
+    #r2{
+      fill: $mainLight;
+    }
+    #r3{
+      fill: $gray;
+    }
+    #r4{
+      fill: $green;
+    }
+    #r5{
+      fill: $creme;
+    }
+  }
 }

@@ -2,18 +2,153 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>mickaël lebihan</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>mickaël lebihan - développeur web</title>
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
-    <body>
-        <header>
-            <h1>Site perso mickael lebihan</h1>
-        </header>
-        <h2>Web</h2>
-        <a href="blaster_fiction.html">blaster fiction</a>
-        <a href="laFourmi.html">la fourmi</a>
-        <a href="amazigh.html">amazigh voyages</a>
-        <a href="diversWeb.html">divers</a>
-        <footer></footer>
-    </body>
+<body>
+
+    <header class="outer">
+        <div class="inner">
+            <h2>
+                <span id="name">
+                    <span id="firstname">mickaël</span>
+                    <span id="lastname">lebihan</span>
+                </span>
+                <span id="post">développeur web</span>
+                <span id="andMore">(et +)</span>
+            </h2>
+        </div>
+
+    </header>
+
+    <main class="outer">
+        <div class="inner">
+
+            <div class="block" id="formation">
+                <h2>formations<i class="far fa-arrow-alt-circle-right"></i></h2>
+                <div class="subContent">
+                    <div>
+                        <h3>développeur web - O'clock (2019/2020)</h3>
+                        <p>Formation de 5 mois en ligne avec de vrais profs, de vrai exos et un vrai travail en groupe à
+                            la fin (le)</p>
+                    </div>
+
+                    <div>
+                        <h3>infographiste metteur en page - afpa</h3>
+                        <p>Formation de 5 mois en ligne avec de vrais profs, de vrai exos et un vrai travail en groupe à
+                            la fin (le)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block" id="xp">
+                <h2>expériences<i class="fas fa-star"></i></h2>
+                <div class="subContent">
+                    <div>
+                        <h3>infographiste / développeur web - UMIJ/le bon plan</h3>
+                        <p>2 ans - dev web, montage vidéo, illustration 3d, réalisation d'affiches et de flyers</p>
+                    </div>
+
+                    <div>
+                        <h3>infographiste metteur en page - afpa</h3>
+                        <p>Formation de 5 mois en ligne avec de vrais profs, de vrai exos et un vrai travail en groupe à
+                            la fin (le)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block" id="comp">
+                <h2>compétences<i class="fas fa-meteor"></i></h2>
+                <div class="subContent">
+                    <h3>machin</h3>
+                    <p>chuchuchu</p>
+                </div>
+            </div>
+            <div class="logoBox">
+                graphisme :
+                <ul>
+
+                    <li>
+                        <ul>affinity
+                            <li>designer</li>
+                            <li>photo</li>
+                            <li>publisher</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>adobe
+                            <li>photoshop</li>
+                            <li>illustrator</li>
+                            <li>indesign</li>
+                        </ul>
+                    </li>
+                    <li>inkscape</li>
+                    <li>gimp</li>
+                    <li>blender</li>
+                </ul>
+                web :
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>symfony</li>
+                    <li>js</li>
+                </ul>
+
+
+            </div>
+
+            <div class="project">
+                <a href="https://www.lafourmi.asso.fr/">la fourmi.asso</a>
+                <a href="https://oplj.fr">oplj.fr (Opte' Pour Le Jeu)</a>
+            </div>
+        </div>
+
+
+        <div w3-include-html="assets/svg/rs.svg"></div>
+
+    </main>
+
+<!--    <div w3-include-html="assets/svg/rs.svg"></div>-->
+
+    <script src="assets/js/anim.js"></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
 </html>

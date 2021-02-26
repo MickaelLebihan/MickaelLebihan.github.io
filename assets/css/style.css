@@ -1,6 +1,164 @@
-h1 {
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  width: 100%;
+}
+.outer .inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f3eddd;
+}
+header .inner {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+header .inner h2 {
+  z-index: 2;
+  position: relative;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  text-align: right;
+  border: 4px solid #FF5B00;
+  border-width: 4px 4px 0 4px;
+}
+header .inner h2 #name {
+  padding: 5px;
+  color: #FF5B00;
+  text-transform: lowercase;
+}
+header .inner h2 #name #firstname {
+  font-weight: normal;
+}
+header .inner h2 #name #lastname {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .inner h2 #post {
+  display: block;
+  background-color: #FF5B00;
   color: white;
-  background-color: black;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .inner h2 #andMore {
+  padding: 3px;
+  font-size: 0.5em;
+  text-transform: lowercase;
+  position: absolute;
+  transform: rotate3d(1, 1, 1, -5deg);
+  right: 10px;
+  bottom: -17px;
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+main .inner {
+  background-color: lightgray;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+.block h2 {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  background-color: #FF5B00;
+  border-radius: 0 5px 0 0;
+  font-weight: bold;
+}
+.block h2 i {
+  margin-left: 20px;
+}
+.block .subContent {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid #FF5B00;
+}
+.block .subContent div {
+  margin-bottom: 10px;
+}
+.block .subContent div h3 {
+  padding: 0 8px;
+  display: inline-block;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #BB3B0E;
+  border-width: 0 0 2px 7px;
+}
+.block .subContent div h3:first-letter {
+  text-transform: uppercase;
+}
+.block .subContent div p {
+  margin: 5px 0 0 25px;
+  border: 1px solid #000;
+}
+
+.block:hover .subContent {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.block:hover#formation h2 > i {
+  transition: transform 2s ease;
+  transform-origin: 50%;
+  transform: rotate(-45deg);
+}
+.block:hover#xp h2 > i {
+  transition: transform 2s ease;
+  transform: rotate(360deg);
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+ul li ul li {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+svg {
+  z-index: 1;
+  position: absolute;
+  right: 350px;
+  background-color: gray;
+  transform: rotate(-45deg) scale(0.5);
+}
+svg #rGroup .r {
+  transform: scale3d(1, 1, 1);
+  transform-origin: 0 0;
+  transition: transform 0.5s ease;
+}
+svg #rGroup .r:hover {
+  transform: scale3d(2, 1, 1);
+}
+svg #rGroup #r1 {
+  fill: #BB3B0E;
+}
+svg #rGroup #r2 {
+  fill: #DD7631;
+}
+svg #rGroup #r3 {
+  fill: #474747;
+}
+svg #rGroup #r4 {
+  fill: #708160;
+}
+svg #rGroup #r5 {
+  fill: #D8C593;
 }
 
 /*# sourceMappingURL=style.css.map */
